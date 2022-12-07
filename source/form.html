@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo logo" href="#">
+        <img class="logo-image" src="./img/logo.svg" width="185" height="96" alt="Седона">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="./index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="./catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru">Htmlacademy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-search">
+        <section class="welcome">
+            <h2 class="visually-hidden">Логотип Седоны</h2>
+            <img class="welcome__text" src="./img/SEDONA.svg" alt="Буквы Седона">
+        </section>
+        <section class="promo">
+          <h2 class="promo__title">Оставьте свой отзыв</h2>
+          <p class="promo__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </section>
+        <form class="main-search__form search-form" method="post" action="https://echo.htmlacademy.ru">
+          <fieldset class="search-form__group">
+            <legend class="search-form__title">Представьтесь</legend>
+            <ul class="search-form__list">
+              <li class="search-form__item">
+                <label class="search-form__label" for="search-form__name">Имя*:</label>
+                <input class="search-form__text text text--dark" id="search-form__name" type="text" placeholder="Пётр">
+              </li>
+              <li class="search-form__item">
+                <label class="search-form__label" for="search-form__surname">Фамилия*:</label>
+                <input class="search-form__text text text--dark" id="search-form__surname" type="text" placeholder="Пустота">
+              </li>
+              <li class="search-form__item">
+                <label class="search-form__label" for="search-form__patronymic">Отчество*:</label>
+                <input class="search-form__text text text--dark" id="search-form__patronymic" type="text" placeholder="Викторович">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="search-form__group">
+            <legend class="search-form__title">Контактная информация:</legend>
+            <ul class="search-form__list">
+              <li class="search-form__item">
+                <label class="search-form__label" for="search-form__phone">Контактный телефон*:</label>
+                <input class="search-form__text text text--light" id="search-form__phone" type="text" placeholder="Введите телефон">
+              </li>
+              <li class="search-form__item">
+                <label class="search-form__label" for="search-form__email">Электронная почта*:</label>
+                <input class="search-form__text text text--light" id="search-form__email" type="text" placeholder="Введите e-mail">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="search-form__group">
+            <legend class="search-form__title">Ваше общее впечатление:</legend>
+            <ul class="search-form__list">
+              <li class="search-form__item">
+                <label class="search-form__label" for="plus">Скорее положительное</label>
+                <input class="search-form__text" id="plus" name="emotion" value="plus" type="radio" checked>
+              </li>
+              <li class="search-form__item">
+                <label class="search-form__label" for="minus">Скорее отрицательное</label>
+                <input class="search-form__text" id="minus" name="emotion" value="minus" type="radio" checked>
+              </li>
+              <li class="search-form__item">
+                <label class="search-form__label" for="neutral">Затрудняюсь ответить</label>
+                <input class="search-form__text" id="neutral" name="emotion" value="neutral" type="radio" checked>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="search-form__group">
+            <legend class="search-form__title">Посещенные достопримечательности:</legend>
+            <ul class="search-form__list">
+              <li class="search-form__item">
+                <label class="search-form__label" for="bridge">Мост Дьявола</label>
+                <input class="search-form__text" id="bridge" name="showplace" value="bridge" type="checkbox" checked>
+              </li>
+              <li class="search-form__item">
+                <label class="search-form__label" for="mountain">Гора-Колокол</label>
+                <input class="search-form__text" id="mountain" name="showplace" value="mountain" type="checkbox" checked>
+              </li>
+              <li class="search-form__item">
+                <label class="search-form__label" for="park">Слайд-парк</label>
+                <input class="search-form__text" id="park" name="showplace" value="park" type="checkbox" checked>
+              </li>
+              <li class="search-form__item">
+                <label class="search-form__label" for="rock">Красные скалы</label>
+                <input class="search-form__text" id="rock" name="showplace" value="rock" type="checkbox">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="search-form__group">
+            <legend class="search-form__title">Опишите свои эмоции:</legend>
+            <textarea class="search-form__textarea" placeholder="Опишите подробно все свои восторги" name=comment></textarea>
+          </fieldset>
+          <button class="button" type="submit">Отправить отзыв</button>
+          <p class="footnote">* — Обязательные поля</p>
+        </form>
+    </main>
+    <footer class="main-footer">
+        <div class="main-footer__wrapper">
+          <a class="main-footer__hashtag" href="#">#visitsedona</a>
+          <div class="main-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Телеграмм</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Youtube</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__copyright copyright">
+            <b class="copyright__text">Разработано:</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
+        </div>
+    </footer>
+    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+
+  </body>
+</html>
