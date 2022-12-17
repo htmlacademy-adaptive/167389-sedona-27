@@ -1,0 +1,21 @@
+@import "../mixins/mixins.scss";
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 29px;
+  padding-bottom: 30px;
+}
+
+.main-footer__wrapper {
+  text-align: center;
+}
+
+.main-footer__hashtag {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+
+  @include large-text;
+}

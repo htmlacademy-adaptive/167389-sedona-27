@@ -1,0 +1,10 @@
+@import "../mixins/mixins.scss";
+
+.button {
+  background-color: #81b3d2;
+  color: #ffffff;
+  width: 100%;
+  display: block;
+
+  @include large-text;
+}

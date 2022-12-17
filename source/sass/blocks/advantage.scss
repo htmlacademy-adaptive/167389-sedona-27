@@ -1,0 +1,37 @@
+.advantage {
+  text-align: center;
+  padding-top: 24px;
+  background-color: #eeeeee;
+
+  &--light {
+    background-color: #81b2d3;
+    color: #ffffff;
+    padding-top: 37px;
+  }
+}
+
+.advantage__title {
+  padding-bottom: 11px;
+  margin: 0;
+}
+
+.advantage__number {
+  padding-bottom: 17px;
+  margin: 0;
+  color: #333333;
+
+  &--light {
+    color: #ffffff;
+  }
+}
+
+.advantage__description {
+  margin: 0;
+  padding: 0 33px 24px;
+  color: #333333;
+
+  &--light {
+    padding: 0 18px 37px;
+    color: #ffffff;
+  }
+}

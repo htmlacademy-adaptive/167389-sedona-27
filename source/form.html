@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body class="page__body">
+  <body class="page__container">
     <header class="main-header">
       <a class="main-header__logo logo" href="#">
         <img class="logo-image" src="./img/logo.svg" width="185" height="96" alt="Седона">
@@ -16,29 +17,29 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="./index.html">Главная</a>
+              <a class="main-nav__link" href="./index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="./catalog.html">Фото и видео</a>
+              <a class="main-nav__link" href="./catalog.html">Фото и видео</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Форма отзыва</a>
+              <a class="main-nav__link" href="./form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a href="https://htmlacademy.ru">Htmlacademy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru">Htmlacademy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="main-search">
+    <main class="main-review">
         <section class="welcome">
             <h2 class="visually-hidden">Логотип Седоны</h2>
             <img class="welcome__text" src="./img/SEDONA.svg" alt="Буквы Седона">
         </section>
-        <section class="promo">
-          <h2 class="promo__title">Оставьте свой отзыв</h2>
-          <p class="promo__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <section class="review-form">
+          <h2 class="review-form__title">Оставьте свой отзыв</h2>
+          <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </section>
         <form class="main-search__form search-form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="search-form__group">
@@ -113,7 +114,7 @@
             <legend class="search-form__title">Опишите свои эмоции:</legend>
             <textarea class="search-form__textarea" placeholder="Опишите подробно все свои восторги" name=comment></textarea>
           </fieldset>
-          <button class="button" type="submit">Отправить отзыв</button>
+          <button class="search-form__button button" type="submit">Отправить отзыв</button>
           <p class="footnote">* — Обязательные поля</p>
         </form>
     </main>
@@ -123,17 +124,17 @@
           <div class="main-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <a class="social__link social__link--vkontakte button" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">Вконтакте</span>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy">
                   <span class="visually-hidden">Телеграмм</span>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Youtube</span>
                 </a>
               </li>

@@ -1,0 +1,18 @@
+@import "../mixins/mixins.scss";
+
+.video {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 17px;
+}
+
+.video__title {
+  @include large-text;
+  margin: 0;
+  padding-bottom: 35px;
+}
+
+.video__text {
+  margin: 0;
+  padding: 0 26px 38px 26px;
+}
