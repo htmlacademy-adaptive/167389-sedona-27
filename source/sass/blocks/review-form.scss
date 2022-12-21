@@ -12,14 +12,12 @@
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: red;
+  background-color: #000000;
 }
 
 .review-form__title {
   margin: 0;
   padding: 36px 0 24px;
-  //text-transform: uppercase;
-  //text-align: center;
 
   @include medium-text;
 }
@@ -27,5 +25,4 @@
 .review-form__text {
   margin: 0;
   padding-bottom: 28px;
-  //text-transform: uppercase;
 }
