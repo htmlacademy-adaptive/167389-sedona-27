@@ -1,12 +1,12 @@
 // Начните писать стили здесь
-@use "./blocks/fonts.scss";
+@use "./global/fonts.scss";
 @use "./blocks/main-nav.scss";
 @use "./blocks/logo.scss";
 @use "./blocks/main-container.scss";
 @use "./blocks/page-container.scss";
 @use "./blocks/promo.scss";
 @use "./blocks/visually-hidden.scss";
-@use "./mixins/mixins.scss";
+@use "./global/mixins.scss";
 @use "./blocks/text.scss";
 @use "./blocks/advantage.scss";
 @use "./blocks/advantages.scss";
@@ -23,3 +23,4 @@
 @use "./blocks/info.scss";
 @use "./blocks/like.scss";
 @use "./blocks/video.scss";
+@use "./blocks/review-form.scss";
