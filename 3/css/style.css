@@ -69,6 +69,7 @@
 }
 
 .promo {
+  display: block;
   background-color: #81b3d2;
   padding: 90px 19px 85px;
   background-image: url("../img/back-mobile.jpg");
@@ -111,6 +112,7 @@
   text-align: center;
   padding-top: 24px;
   background-color: #eeeeee;
+  box-sizing: border-box;
 }
 .advantage--light {
   background-color: #81b2d3;
