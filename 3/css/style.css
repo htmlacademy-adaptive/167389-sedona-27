@@ -33,6 +33,14 @@
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  font-family: "PT Sans", sans-serif;
+}
+
+.main-nav__item {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .main-nav__toggle {
@@ -83,13 +91,13 @@
   overflow: hidden;
 }
 
-.text {
+.text-index {
   text-transform: uppercase;
   text-align: center;
   padding: 32px 28px 53px;
 }
 
-.text__title {
+.text-index__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -98,7 +106,7 @@
   padding-bottom: 35px;
 }
 
-.text__description {
+.text-index__description {
   margin: 0;
 }
 
@@ -181,16 +189,15 @@
   color: #333333;
 }
 
-.search__button {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
 .button {
   background-color: #81b3d2;
   color: #ffffff;
   width: 100%;
-  display: block;
+  display: flex;
+  min-height: 58px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -354,5 +361,93 @@
 .review-form__text {
   margin: 0;
   padding-bottom: 28px;
+}
+
+.search-form {
+  padding: 0 20px;
+}
+
+.search-form__group {
+  padding: 24px 0;
+  border: none;
+  margin: 0;
+}
+
+.search-form__title {
+  padding: 0;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  font-family: "PT Sans", sans-serif;
+}
+
+.search-form__text {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.search-form__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.search-form__item {
+  padding-bottom: 16px;
+  margin: 0;
+}
+
+.search-form__textarea {
+  padding: 16px;
+  min-height: 118px;
+  border: none;
+  background-color: #f2f2f2;
+  margin: 0;
+  margin-bottom: 32px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-form__footnote {
+  text-transform: uppercase;
+  text-align: end;
+  margin: 0;
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: "PT Sans", sans-serif;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  font-family: "PT Sans", sans-serif;
+}
+
+.form-contact__info {
+  display: block;
+  position: relative;
+}
+
+.form-contact__info::after {
+  display: block;
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  content: "";
+  right: 0;
+  top: 21px;
+}
+
+.person-info {
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
