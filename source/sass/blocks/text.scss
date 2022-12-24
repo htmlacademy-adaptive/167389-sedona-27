@@ -1,0 +1,5 @@
+@import "../global/mixins.scss";
+
+.text {
+  @include medium-text;
+}

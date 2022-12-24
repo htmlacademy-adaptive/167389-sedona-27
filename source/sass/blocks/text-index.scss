@@ -1,0 +1,17 @@
+@import "../global/mixins.scss";
+
+.text-index {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 32px 28px 53px;
+}
+
+.text-index__title {
+  @include medium-text;
+  margin: 0;
+  padding-bottom: 35px;
+}
+
+.text-index__description {
+  margin: 0;
+}

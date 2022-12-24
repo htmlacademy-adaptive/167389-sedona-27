@@ -1,0 +1,21 @@
+@import "../global/mixins.scss";
+
+.search {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 38px 18px 49px;
+}
+
+.search__title {
+  margin: 0;
+  padding-bottom: 38px;
+
+  @include large-text;
+}
+
+.search__description {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 32px;
+  color: #333333;
+}

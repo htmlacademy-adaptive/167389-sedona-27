@@ -1,0 +1,58 @@
+@import "../global/mixins.scss";
+
+.search-form {
+  padding: 0 20px;
+}
+
+.search-form__group {
+  padding: 24px 0;
+  border: none;
+  margin: 0;
+}
+
+.search-form__title {
+  padding: 0;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  @include medium-text;
+}
+
+.search-form__text {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.search-form__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.search-form__item {
+  padding-bottom: 16px;
+  margin: 0;
+}
+
+.search-form__textarea {
+  padding: 16px;
+  min-height: 118px;
+  border: none;
+  background-color: #f2f2f2;
+  margin: 0;
+  margin-bottom: 32px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-form__footnote {
+  text-transform: uppercase;
+  text-align: end;
+  margin: 0;
+
+  @include super-small-text;
+}

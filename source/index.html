@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body class="page__body">
+  <body class="page__container">
     <header class="main-header">
-      <a class="main-header__logo logo" href="#">
+      <a class="main-header__logo logo" href="./index.html">
         <img class="logo-image" src="./img/logo.svg" width="185" height="96" alt="Седона">
       </a>
       <nav class="main-nav">
@@ -16,16 +17,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#">Главная</a>
+              <a class="main-nav__link" href="#">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="./catalog.html">Фото и видео</a>
+              <a class="main-nav__link" href="./catalog.html">Фото и видео</a>
             </li>
             <li class="main-nav__item">
-              <a href="./form.html">Форма отзыва</a>
+              <a class="main-nav__link" href="./form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a href="https://htmlacademy.ru">Htmlacademy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru">Htmlacademy</a>
             </li>
           </ul>
         </div>
@@ -34,17 +35,19 @@
     <main class="main-container">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       <section class="promo">
-        <img class="promo__image" src="./img/promo__image--text.svg" width="901" height="389" alt="Добро пожаловать в Седону">
-        <h2 class="promo__title">Седона — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
-        <p class="promo__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <img class="promo__image" src="./img/promo__image--text.svg" width="282" height="214" alt="Добро пожаловать в Седону">
+      </section>
+      <section class="text-index">
+        <h2 class="text-index__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="text-index__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section class="advantages">
         <ul class="advantages__list">
           <li class="advantages__item">
             <div class="advantages__info advantage advantage--light">
-              <h3 class="advantage__item-title">Настоящий городок</h3>
-              <p class="advantage__item-number">— №1 —</p>
-              <p class="advantage__item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <h3 class="advantage__title">Настоящий городок</h3>
+              <p class="advantage__number advantage__number--light">— №1 —</p>
+              <p class="advantage__description advantage__description--light">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               <img src="./img/photo-city.jpg" width="320" height="260" alt="Примеры зданий в Седоне">
             </div>
             <ul class="advantages__item-town town">
@@ -65,8 +68,8 @@
           <li class="advantages__item">
             <div class="advantages__info advantage advantage--light">
               <h3 class="advantage__title">Там есть мост дьявола</h3>
-              <p class="advantage__number">— №2 —</p>
-              <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <p class="advantage__number advantage__number--light">— №2 —</p>
+              <p class="advantage__description advantage__description--light">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               <img src="./img/photo-bridge.jpg" width="320" height="260" alt="Каньон">
             </div>
           </li>
@@ -95,7 +98,7 @@
       <section class="search">
         <h2 class="search__title">Заинтересовались?</h2>
         <p class="search__description">Укажите предполагаемые датыпоездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-        <button class="search__button" type="button">Найти гостиницу</button>
+        <a class="search__button button">Найти гостиницу</a>
       </section>
       <section class="map">
         <h3 class="visually-hidden">Карта</h3>
@@ -126,12 +129,13 @@
         </div>
         <div class="main-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+          </a>
         </div>
       </div>
     </footer>
 
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
   </body>
 </html>
