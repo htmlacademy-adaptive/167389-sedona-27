@@ -46,46 +46,46 @@
             <legend class="search-form__title">Представьтесь</legend>
             <ul class="search-form__list">
               <li class="search-form__item">
-                <label class="search-form__label" for="search-form__name">Имя*:</label>
-                <input class="search-form__text text text--dark" id="search-form__name" type="text" placeholder="Пётр">
+                <label class="search-form__label person-info" for="search-form__name">Имя*:</label>
+                <input class="search-form__text text" id="search-form__name" type="text" placeholder="Имя" value="Пётр">
               </li>
               <li class="search-form__item">
-                <label class="search-form__label" for="search-form__surname">Фамилия*:</label>
-                <input class="search-form__text text text--dark" id="search-form__surname" type="text" placeholder="Пустота">
+                <label class="search-form__label person-info" for="search-form__surname">Фамилия*:</label>
+                <input class="search-form__text text" id="search-form__surname" type="text" placeholder="Фамилия" value="Пустота">
               </li>
               <li class="search-form__item">
-                <label class="search-form__label" for="search-form__patronymic">Отчество*:</label>
-                <input class="search-form__text text text--dark" id="search-form__patronymic" type="text" placeholder="Викторович">
+                <label class="search-form__label person-info" for="search-form__patronymic">Отчество*:</label>
+                <input class="search-form__text text" id="search-form__patronymic" type="text" placeholder="Отчество" value="Викторович">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="search-form__group">
+          <fieldset class="search-form__group form-contact">
             <legend class="search-form__title">Контактная информация:</legend>
             <ul class="search-form__list">
               <li class="search-form__item">
-                <label class="search-form__label" for="search-form__phone">Контактный телефон*:</label>
-                <input class="search-form__text text text--light" id="search-form__phone" type="text" placeholder="Введите телефон">
+                <label class="search-form__label person-info form-contact__info" for="search-form__phone">Контактный телефон*:</label>
+                <input class="search-form__text text" id="search-form__phone" type="text" placeholder="Введите телефон">
               </li>
               <li class="search-form__item">
-                <label class="search-form__label" for="search-form__email">Электронная почта*:</label>
-                <input class="search-form__text text text--light" id="search-form__email" type="text" placeholder="Введите e-mail">
+                <label class="search-form__label person-info form-contact__info" for="search-form__email">Электронная почта*:</label>
+                <input class="search-form__text text" id="search-form__email" type="text" placeholder="Введите e-mail">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="search-form__group">
+          <fieldset class="search-form__group impression">
             <legend class="search-form__title">Ваше общее впечатление:</legend>
             <ul class="search-form__list">
               <li class="search-form__item">
-                <label class="search-form__label" for="plus">Скорее положительное</label>
-                <input class="search-form__text" id="plus" name="emotion" value="plus" type="radio" checked>
+                <input class="search-form__radio" id="plus" name="emotion" value="plus" type="radio" checked>
+                <label class="search-form__label text" for="plus">Скорее положительное</label>
               </li>
               <li class="search-form__item">
-                <label class="search-form__label" for="minus">Скорее отрицательное</label>
-                <input class="search-form__text" id="minus" name="emotion" value="minus" type="radio" checked>
+                <input class="search-form__radio" id="minus" name="emotion" value="minus" type="radio">
+                <label class="search-form__label text" for="minus">Скорее отрицательное</label>
               </li>
               <li class="search-form__item">
-                <label class="search-form__label" for="neutral">Затрудняюсь ответить</label>
-                <input class="search-form__text" id="neutral" name="emotion" value="neutral" type="radio" checked>
+                <input class="search-form__radio" id="neutral" name="emotion" value="neutral" type="radio">
+                <label class="search-form__label text" for="neutral">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
@@ -93,29 +93,29 @@
             <legend class="search-form__title">Посещенные достопримечательности:</legend>
             <ul class="search-form__list">
               <li class="search-form__item">
-                <label class="search-form__label" for="bridge">Мост Дьявола</label>
-                <input class="search-form__text" id="bridge" name="showplace" value="bridge" type="checkbox" checked>
+                <input class="search-form__checkbox" id="bridge" name="showplace" value="bridge" type="checkbox" checked>
+                <label class="search-form__label text" for="bridge">Мост Дьявола</label>
               </li>
               <li class="search-form__item">
-                <label class="search-form__label" for="mountain">Гора-Колокол</label>
-                <input class="search-form__text" id="mountain" name="showplace" value="mountain" type="checkbox" checked>
+                <input class="search-form__checkbox" id="mountain" name="showplace" value="mountain" type="checkbox" checked>
+                <label class="search-form__label text" for="mountain">Гора-Колокол</label>
               </li>
               <li class="search-form__item">
-                <label class="search-form__label" for="park">Слайд-парк</label>
-                <input class="search-form__text" id="park" name="showplace" value="park" type="checkbox" checked>
+                <input class="search-form__checkbox" id="park" name="showplace" value="park" type="checkbox" checked>
+                <label class="search-form__label text" for="park">Слайд-парк</label>
               </li>
               <li class="search-form__item">
-                <label class="search-form__label" for="rock">Красные скалы</label>
-                <input class="search-form__text" id="rock" name="showplace" value="rock" type="checkbox">
+                <input class="search-form__checkbox" id="rock" name="showplace" value="rock" type="checkbox">
+                <label class="search-form__label text" for="rock">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="search-form__group">
             <legend class="search-form__title">Опишите свои эмоции:</legend>
-            <textarea class="search-form__textarea" placeholder="Опишите подробно все свои восторги" name=comment></textarea>
+            <textarea class="search-form__textarea text" placeholder="Опишите подробно все свои восторги" name=comment></textarea>
           </fieldset>
           <button class="search-form__button button" type="submit">Отправить отзыв</button>
-          <p class="footnote">* — Обязательные поля</p>
+          <p class="search-form__footnote">* — Обязательные поля</p>
         </form>
     </main>
     <footer class="main-footer">
@@ -124,17 +124,17 @@
           <div class="main-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--vkontakte button" href="https://vk.com/htmlacademy">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">Вконтакте</span>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy">
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
                   <span class="visually-hidden">Телеграмм</span>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Youtube</span>
                 </a>
               </li>

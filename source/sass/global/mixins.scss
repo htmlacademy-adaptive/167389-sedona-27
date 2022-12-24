@@ -1,5 +1,12 @@
 //размер шрифта
 
+@mixin super-small-text {
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: "PT Sans", sans-serif;
+}
+
 @mixin small-text {
   font-size: 18px;
   line-height: 21px;

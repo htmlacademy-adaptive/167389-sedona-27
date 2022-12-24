@@ -6,7 +6,7 @@
 @use "./blocks/promo.scss";
 @use "./blocks/visually-hidden.scss";
 @use "./global/mixins.scss";
-@use "./blocks/text.scss";
+@use "./blocks/text-index.scss";
 @use "./blocks/advantage.scss";
 @use "./blocks/advantages.scss";
 @use "./blocks/town.scss";
@@ -23,3 +23,7 @@
 @use "./blocks/like.scss";
 @use "./blocks/video.scss";
 @use "./blocks/review-form.scss";
+@use "./blocks/search-form.scss";
+@use "./blocks/text.scss";
+@use "./blocks/form-contact.scss";
+@use "./blocks/person-info.scss";
