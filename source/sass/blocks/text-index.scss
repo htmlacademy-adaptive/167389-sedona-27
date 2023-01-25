@@ -3,15 +3,41 @@
 .text-index {
   text-transform: uppercase;
   text-align: center;
-  padding: 32px 28px 53px;
+  padding: 32px 0 53px;
+  margin: 0 auto;
+  display: block;
 }
 
 .text-index__title {
   @include medium-text;
   margin: 0;
   padding-bottom: 35px;
+  display: block;
 }
 
 .text-index__description {
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .text-index {
+    max-width: 520px;
+    padding: 47px 0 55px;
+    text-align: center;
+  }
+
+  .text-index__title {
+    @include large-text;
+  }
+
+  .text-index__description {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .text-index {
+    max-width: 490px;
+    padding: 59px 0 44px;
+  }
 }

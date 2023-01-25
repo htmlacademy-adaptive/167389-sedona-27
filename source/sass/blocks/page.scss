@@ -1,4 +1,4 @@
-.page__container {
+.page {
   width: 320px;
   display: flex;
   flex-direction: column;
@@ -8,4 +8,17 @@
   font-size: 14px;
   line-height: 21px;
   color: #000000;
+}
+
+@media (min-width: 768px) {
+  .page {
+    min-width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page__container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
 }

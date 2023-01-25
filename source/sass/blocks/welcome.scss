@@ -4,9 +4,30 @@
   height: 39px;
   background-image: url("../img/back-inner-mobile.jpg");
   background-position: 0 -57px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .welcome__text {
   display: block;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .welcome {
+    background-image: url("../img/back-tablet.jpg");
+    height: 78px;
+    padding: 95px 0 117px;
+    background-position: 0 -217px;
+    background-size: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .welcome {
+    background-image: url("../img/back-desktop.jpg");
+    background-position: 0 -130px;
+    height: 76px;
+    padding: 103px 0 122px;
+  }
 }

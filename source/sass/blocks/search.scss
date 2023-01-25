@@ -3,12 +3,15 @@
 .search {
   text-transform: uppercase;
   text-align: center;
-  padding: 38px 18px 49px;
+  padding: 40px 18px 49px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .search__title {
   margin: 0;
-  padding-bottom: 38px;
+  padding-bottom: 20px;
 
   @include large-text;
 }
@@ -18,4 +21,31 @@
   padding: 0;
   padding-bottom: 32px;
   color: #333333;
+}
+
+.search__description-break {
+  display: none;
+}
+
+.search__button {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .search__title {
+    @include super-large-text;
+  }
+
+  .search__description {
+    max-width: 435px;
+    font-style: normal;
+  }
+
+  .search__description-break {
+    display: block;
+  }
+
+  .search__button {
+    width: 458px;
+  }
 }

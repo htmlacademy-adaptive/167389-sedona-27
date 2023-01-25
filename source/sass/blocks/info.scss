@@ -8,3 +8,13 @@
   margin: 0;
   padding-bottom: 16px;
 }
+
+@media (min-width: 768px) {
+  .info__title {
+    padding-top: 0;
+  }
+
+  .info__name {
+    padding-bottom: 0;
+  }
+}

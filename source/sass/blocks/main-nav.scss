@@ -31,3 +31,37 @@
   top: 18px;
   right: 18px;
 }
+
+@media (min-width: 768px) {
+  .main-nav__list {
+    grid-template-columns: repeat(5, 1fr);
+    display: grid;
+    grid-auto-flow: dense;
+    background-color: #ffffff;
+  }
+
+  .main-nav__list::before {
+    content: "";
+    display: block;
+    grid-column: 3;
+    position: relative;
+  }
+
+  .main-nav__link {
+    color: #000000;
+    @include small-text;
+  }
+
+  .main-nav__link--color {
+    color: #766357;
+  }
+
+  .main-nav__item {
+    box-shadow: none;
+    padding: 18px 0 17px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

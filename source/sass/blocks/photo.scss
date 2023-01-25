@@ -7,3 +7,51 @@
   height: 1px;
   background-color: #e5e5e5;
 }
+
+.photo__description {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 22px 20px 15px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .photo {
+    padding: 0;
+  }
+
+  .photo__image {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .photo__description {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 22px 20px 15px;
+    box-sizing: border-box;
+  }
+
+  .photo__description-like {
+    padding: 10px 0 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo {
+    position: relative;
+  }
+
+  .photo__description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #000000;
+    opacity: 0.3;
+    color: #ffffff;
+  }
+}
