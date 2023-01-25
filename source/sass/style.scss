@@ -2,7 +2,7 @@
 @use "./blocks/main-nav.scss";
 @use "./blocks/logo.scss";
 @use "./blocks/main-container.scss";
-@use "./blocks/page-container.scss";
+@use "./blocks/page.scss";
 @use "./blocks/promo.scss";
 @use "./blocks/visually-hidden.scss";
 @use "./global/mixins.scss";
@@ -27,3 +27,4 @@
 @use "./blocks/text.scss";
 @use "./blocks/form-contact.scss";
 @use "./blocks/person-info.scss";
+@use "./blocks/map.scss";

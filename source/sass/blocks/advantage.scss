@@ -1,12 +1,18 @@
+@import "../global/mixins.scss";
+
 .advantage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding-top: 24px;
-  background-color: #eeeeee;
   box-sizing: border-box;
+  padding: 24px 0;
 
   &--light {
     background-color: #81b2d3;
     color: #ffffff;
+    padding: 0;
     padding-top: 37px;
   }
 }
@@ -14,6 +20,8 @@
 .advantage__title {
   padding-bottom: 11px;
   margin: 0;
+
+  @include medium-text;
 }
 
 .advantage__number {
@@ -28,11 +36,42 @@
 
 .advantage__description {
   margin: 0;
-  padding: 0 33px 24px;
+  padding: 0 20px;
   color: #333333;
+  max-width: 290px;
 
   &--light {
-    padding: 0 18px 37px;
+    padding: 0 8px 37px 8px;
     color: #ffffff;
+  }
+}
+
+@media (min-width: 768px) {
+  .advantage {
+    padding: 0 33px;
+
+    &--light {
+      width: 33%;
+    }
+  }
+
+  .advantage__title {
+    width: 160px;
+
+    @include large-text;
+  }
+
+  .advantage__description {
+    max-width: 256px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantage {
+    padding: 0 50px;
+  }
+
+  .advantage__description {
+    max-width: 279px;
   }
 }

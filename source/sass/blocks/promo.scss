@@ -1,6 +1,32 @@
 .promo {
   display: block;
   background-color: #81b3d2;
-  padding: 90px 19px 85px;
+  padding: 90px 0 85px;
+  text-align: center;
   background-image: url("../img/back-mobile.jpg");
+  background-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.promo__image {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .promo {
+    background-image: url("../../img/back-tablet.jpg");
+    padding: 77px 0 91px;
+  }
+
+  .promo__image {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promo {
+    background-image: url("../../img/back-desktop.jpg");
+  }
 }

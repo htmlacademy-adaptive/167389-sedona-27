@@ -16,3 +16,13 @@
 .catalog-text__description {
   margin: 0;
 }
+
+@media (min-width: 768px) {
+  .catalog-text {
+    padding: 66px 165px 67px;
+  }
+
+  .catalog-text__title {
+    @include super-large-text;
+  }
+}
