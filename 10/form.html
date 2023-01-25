@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/source/img/favicons/apple-touch-icon.png" type="image/png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="./css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/167389-sedona-27/10/">
+</head>
+  <body class="page">
+    <div class="page__container">
+      <header class="main-header">
+        <a class="main-header__logo logo" href="./index.html">
+          <img class="logo-image" src="./img/logo.svg" width="185" height="96" alt="Седона">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./catalog.html">Фото и видео</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./form.html">Форма отзыва</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru">Htmlacademy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="main-review">
+          <section class="welcome">
+              <h2 class="visually-hidden">Логотип Седоны</h2>
+              <img class="welcome__text" src="./img/SEDONA.svg" alt="Буквы Седона">
+          </section>
+          <section class="review-form">
+            <h2 class="review-form__title">Оставьте свой отзыв</h2>
+            <p class="review-form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </section>
+          <form class="main-search__form search-form" method="post" action="https://echo.htmlacademy.ru">
+            <fieldset class="search-form__group search-form__group--half">
+              <legend class="search-form__title">Представьтесь</legend>
+              <ul class="search-form__list search-form__list--half-left">
+                <li class="search-form__item">
+                  <label class="search-form__label person-info" for="search-form__name">Имя*:</label>
+                  <input class="search-form__text text" id="search-form__name" type="text" placeholder="Имя" value="Пётр">
+                </li>
+                <li class="search-form__item">
+                  <label class="search-form__label person-info" for="search-form__surname">Фамилия*:</label>
+                  <input class="search-form__text text" id="search-form__surname" type="text" placeholder="Фамилия" value="Пустота">
+                </li>
+                <li class="search-form__item">
+                  <label class="search-form__label person-info" for="search-form__patronymic">Отчество*:</label>
+                  <input class="search-form__text text" id="search-form__patronymic" type="text" placeholder="Отчество" value="Викторович">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="search-form__group search-form__group--half form-contact">
+              <legend class="search-form__title">Контактная информация:</legend>
+              <ul class="search-form__list search-form__list--half-right">
+                <li class="search-form__item">
+                  <label class="search-form__label person-info form-contact__info" for="search-form__phone">Контактный телефон*:</label>
+                  <input class="search-form__text text" id="search-form__phone" type="text" placeholder="Введите телефон">
+                </li>
+                <li class="search-form__item">
+                  <label class="search-form__label person-info form-contact__info" for="search-form__email">Электронная почта*:</label>
+                  <input class="search-form__text text" id="search-form__email" type="text" placeholder="Введите e-mail">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="search-form__group impression">
+              <legend class="search-form__title">Ваше общее впечатление:</legend>
+              <ul class="search-form__list">
+                <li class="search-form__item">
+                  <input class="search-form__radio" id="plus" name="emotion" value="plus" type="radio" checked>
+                  <label class="search-form__label text" for="plus">Скорее положительное</label>
+                </li>
+                <li class="search-form__item">
+                  <input class="search-form__radio" id="minus" name="emotion" value="minus" type="radio">
+                  <label class="search-form__label text" for="minus">Скорее отрицательное</label>
+                </li>
+                <li class="search-form__item">
+                  <input class="search-form__radio" id="neutral" name="emotion" value="neutral" type="radio">
+                  <label class="search-form__label text" for="neutral">Затрудняюсь ответить</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="search-form__group">
+              <legend class="search-form__title">Посещенные достопримечательности:</legend>
+              <ul class="search-form__list">
+                <li class="search-form__item">
+                  <input class="search-form__checkbox" id="bridge" name="showplace" value="bridge" type="checkbox" checked>
+                  <label class="search-form__label text" for="bridge">Мост Дьявола</label>
+                </li>
+                <li class="search-form__item">
+                  <input class="search-form__checkbox" id="mountain" name="showplace" value="mountain" type="checkbox" checked>
+                  <label class="search-form__label text" for="mountain">Гора-Колокол</label>
+                </li>
+                <li class="search-form__item">
+                  <input class="search-form__checkbox" id="park" name="showplace" value="park" type="checkbox" checked>
+                  <label class="search-form__label text" for="park">Слайд-парк</label>
+                </li>
+                <li class="search-form__item">
+                  <input class="search-form__checkbox" id="rock" name="showplace" value="rock" type="checkbox">
+                  <label class="search-form__label text" for="rock">Красные скалы</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="search-form__group">
+              <legend class="search-form__title">Опишите свои эмоции:</legend>
+              <textarea class="search-form__textarea text" placeholder="Опишите подробно все свои восторги" name=comment></textarea>
+            </fieldset>
+            <button class="search-form__button button" type="submit">Отправить отзыв</button>
+            <p class="search-form__footnote">* — Обязательные поля</p>
+          </form>
+      </main>
+      <footer class="main-footer">
+        <div class="main-footer__wrapper">
+          <a class="main-footer__hashtag" href="#">#visitsedona</a>
+          <div class="main-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Телеграмм</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Youtube</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__copyright copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="copyright__text">Разработано:</span>
+              <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" width="24" height="29" fill="currentColor"><path fill="#81B3D2" d="M12.134 0h-.09L0 1.19v21.007L12.045 29 24 22.197V1.19L12.134 0Zm10.17 10.29-10.26-5.783v-.085h-.089l-.089-.085v.085L1.696 10.29V2.636l10.26-1.02 10.349 1.02v7.654ZM11.956 5.783l10.26 5.698-4.014 2.211-6.335-3.572v1.19l5.264 2.977-.803.426-4.46-2.552v1.19l3.39 1.957-.714.425-2.677-1.53v1.19l1.695.935-1.606.936-10.17-5.698 10.17-5.783Zm-10.26 7.059 10.171 5.783v.85l-7.048-3.997v1.19l7.137 4.083v.935L4.818 17.69v1.19l7.137 4.083 7.227-4.167v-4.423l3.034-1.7v8.504l-10.26 5.868-10.26-5.783v-8.42Z"/></svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
