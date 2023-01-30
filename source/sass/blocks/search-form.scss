@@ -1,20 +1,35 @@
 @import "../global/mixins.scss";
 
 .search-form {
-  padding: 0 20px;
+  padding: 0;
+  padding-bottom: 30px;
 }
 
 .search-form__group {
-  padding: 24px 0;
   border: none;
   margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.search-form__group--half::before,
+.control::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e5e5e5;
+  content: "";
 }
 
 .search-form__title {
-  padding: 0;
+  padding: 24px 20px 0;
   margin: 0 auto;
+  text-align: center;
   text-transform: uppercase;
   font-weight: 700;
+  line-height: 0;
 
   @include medium-text;
 }
@@ -28,15 +43,28 @@
 }
 
 .search-form__list {
+  padding: 20px 20px;
   list-style: none;
   margin: 0;
-  padding: 0;
+}
+
+.search-form__list--half-left {
+  padding-bottom: 24px;
+}
+
+.search-form__list--half-right {
+  padding-bottom: 19px;
 }
 
 .search-form__item {
+  padding: 0;
   padding-bottom: 16px;
   margin: 0;
   width: 100%;
+}
+
+.search-form__label {
+  padding-left: 16px;
 }
 
 .search-form__textarea {
@@ -50,10 +78,17 @@
   box-sizing: border-box;
 }
 
+.search-form__button {
+  margin: 30px 20px 0;
+  width: 280px;
+  box-sizing: border-box;
+}
+
 .search-form__footnote {
   text-transform: uppercase;
   text-align: end;
   margin: 0;
+  padding: 0 20px;
 
   @include super-small-text;
 }
@@ -68,24 +103,53 @@
 
   .search-form__group {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
-  .search-form__group--half {
+  .search-form__group--half-left::before,
+  .search-form__group--half-right::before {
+    display: none;
+  }
+
+  .search-form__group--half-left,
+  .search-form__group--half-right {
     width: 50%;
     display: flex;
   }
 
   .search-form__list--half-left {
+    padding: 0;
+    padding-top: 25px;
     width: 86.4%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
+  .search-form__group--half-left::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #e5e5e5;
+    content: "";
+  }
+
   .search-form__list--half-right {
+    padding: 0;
+    padding-top: 25px;
+    padding-left: 44px;
+    margin-right: 0;
     width: 86.4%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+  }
+
+  .search-form__title {
+    padding-bottom: 28px;
+
+    @include large-text;
   }
 }

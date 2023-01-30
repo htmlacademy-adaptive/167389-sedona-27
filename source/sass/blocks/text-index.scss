@@ -3,7 +3,7 @@
 .text-index {
   text-transform: uppercase;
   text-align: center;
-  padding: 32px 0 53px;
+  padding: 32px 30px 39px;
   margin: 0 auto;
   display: block;
 }
@@ -35,9 +35,13 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .text-index {
-    max-width: 490px;
-    padding: 59px 0 44px;
+    max-width: 484px;
+    padding: 59px 360px 44px 356px;
+  }
+
+  .text-index__title {
+    padding-bottom: 31px;
   }
 }

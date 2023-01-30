@@ -1,4 +1,23 @@
+.like {
+  display: flex;
+  align-items: center;
+}
+
 .like__counter {
   font-weight: 700;
-  padding-left: 14px;
+  margin: 0;
+  padding: 0;
+  padding-top: 4px;
+  padding-left: 15px;
+}
+
+.like__icon {
+  color: #b3b3b3;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .like__counter {
+    padding-left: 10px;
+  }
 }

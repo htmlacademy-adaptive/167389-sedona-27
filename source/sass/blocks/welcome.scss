@@ -1,11 +1,12 @@
 .welcome {
   padding: 52px 0 67px;
   background-color: #81b2d3;
-  height: 39px;
-  background-image: url("../img/back-inner-mobile.jpg");
-  background-position: 0 -57px;
+  background-image: url("../../img/intro-triangle.svg"),
+    url("../img/back-inner-mobile.jpg");
   box-sizing: border-box;
-  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  margin: 0;
 }
 
 .welcome__text {
@@ -15,19 +16,27 @@
 
 @media (min-width: 768px) {
   .welcome {
-    background-image: url("../img/back-tablet.jpg");
-    height: 78px;
+    background-image: url("../../img/intro-triangle.svg"),
+      url("../img/back-tablet.jpg");
     padding: 95px 0 117px;
-    background-position: 0 -217px;
-    background-size: 100%;
+    width: 100%;
+  }
+
+  .welcome__text {
+    width: 456.9px;
+    height: 77.6px;
   }
 }
 
 @media (min-width: 1200px) {
   .welcome {
-    background-image: url("../img/back-desktop.jpg");
-    background-position: 0 -130px;
-    height: 76px;
+    background-image: url("../../img/intro-triangle.svg"),
+      url("../img/back-desktop.jpg");
     padding: 103px 0 122px;
+  }
+
+  .welcome__text {
+    width: 462px;
+    height: 79px;
   }
 }

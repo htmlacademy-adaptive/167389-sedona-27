@@ -32,13 +32,20 @@
 }
 
 @media (min-width: 768px) {
+  .search {
+    padding-top: 61px;
+    padding-bottom: 58px;
+  }
+
   .search__title {
     @include super-large-text;
+    padding-bottom: 31px;
   }
 
   .search__description {
     max-width: 435px;
     font-style: normal;
+    padding-bottom: 41px;
   }
 
   .search__description-break {
@@ -47,5 +54,16 @@
 
   .search__button {
     width: 458px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .search {
+    padding-bottom: 65px;
+  }
+
+  .search__description {
+    padding-bottom: 45px;
   }
 }

@@ -3,7 +3,7 @@
 .main-footer {
   display: flex;
   flex-direction: column;
-  padding-top: 36px;
+  padding-top: 24px;
   padding-bottom: 30px;
 }
 
@@ -28,7 +28,14 @@
   .main-footer__wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-footer__wrapper {
+    padding: 0 118px;
   }
 }
