@@ -1,9 +1,9 @@
-.form-contact__info {
+.form-contact__item {
   display: block;
   position: relative;
 }
 
-.form-contact__info::after {
+.form-contact__icon {
   display: block;
   position: absolute;
   width: 58px;
@@ -12,4 +12,16 @@
   content: "";
   right: 0;
   top: 21px;
+}
+
+.form-contact__icon--phone {
+  background-image: url("../../img/phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-contact__icon--mail {
+  background-image: url("../../img/mail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }

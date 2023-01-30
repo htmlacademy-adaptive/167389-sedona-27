@@ -1,12 +1,16 @@
+@import "../global/mixins.scss";
+
 .info__title {
-  padding: 15px 0 5px;
+  padding-bottom: 1px;
   margin: 0;
   text-transform: uppercase;
+
+  @include small-text;
 }
 
 .info__name {
   margin: 0;
-  padding-bottom: 16px;
+  padding-bottom: 10px;
 }
 
 @media (min-width: 768px) {
@@ -16,5 +20,11 @@
 
   .info__name {
     padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .info__title {
+    padding-bottom: 4px;
   }
 }

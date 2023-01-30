@@ -24,14 +24,36 @@
   width: 100%;
 }
 
+.advantages__item--decorate {
+  padding-top: 48px;
+  background-image: url("../../img/white-decor.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 7%;
+}
+
+.advantages__item--ordinary {
+  position: relative;
+}
+
+.advantages__item--ordinary:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background: #d6d6d6;
+  width: 284px;
+  height: 1px;
+}
+
 .advantages__info {
-  max-width: 290px;
+  max-width: 291px;
 }
 
 .advantages__img {
   display: block;
   box-sizing: border-box;
   object-fit: cover;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -50,6 +72,19 @@
 
   .advantages__item--another {
     flex-direction: row-reverse;
+  }
+
+  .advantages__item--decorate {
+    background-image: none;
+    padding-top: 0;
+  }
+
+  .advantages__item--ordinary {
+    margin: 0;
+  }
+
+  .advantages__item--ordinary:not(:last-child)::after {
+    display: none;
   }
 
   .advantages__item {

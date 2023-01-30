@@ -1,4 +1,5 @@
 @use "./global/fonts.scss";
+@use "./blocks/main-header.scss";
 @use "./blocks/main-nav.scss";
 @use "./blocks/logo.scss";
 @use "./blocks/main-container.scss";
@@ -28,3 +29,5 @@
 @use "./blocks/form-contact.scss";
 @use "./blocks/person-info.scss";
 @use "./blocks/map.scss";
+@use "./blocks/control.scss";
+@use "./blocks/modal.scss";

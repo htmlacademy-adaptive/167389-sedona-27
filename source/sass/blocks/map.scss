@@ -1,5 +1,6 @@
 .map {
   margin: 0 auto;
+  padding-bottom: 11px;
 }
 
 .map__online {
@@ -22,7 +23,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .map__online {
     width: 1200px;
     height: 350px;

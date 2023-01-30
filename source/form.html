@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
@@ -15,7 +16,7 @@
         <a class="main-header__logo logo" href="./index.html">
           <img class="logo-image" src="./img/logo.svg" width="185" height="96" alt="Седона">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -39,16 +40,20 @@
       </header>
       <main class="main-review">
           <section class="welcome">
-              <h2 class="visually-hidden">Логотип Седоны</h2>
-              <img class="welcome__text" src="./img/SEDONA.svg" alt="Буквы Седона">
+            <h2 class="visually-hidden">Логотип Седоны</h2>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="/img/sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="/img/sedona-tablet.svg">
+              <img class="welcome__text" src="/img/sedona.svg" width="229" height="39" alt="Буквы Седона">
+            </picture>
           </section>
           <section class="review-form">
             <h2 class="review-form__title">Оставьте свой отзыв</h2>
             <p class="review-form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </section>
           <form class="main-search__form search-form" method="post" action="https://echo.htmlacademy.ru">
-            <fieldset class="search-form__group search-form__group--half">
-              <legend class="search-form__title">Представьтесь</legend>
+            <fieldset class="search-form__group search-form__group--half-left">
+              <h2 class="search-form__title">Представьтесь:</h2>
               <ul class="search-form__list search-form__list--half-left">
                 <li class="search-form__item">
                   <label class="search-form__label person-info" for="search-form__name">Имя*:</label>
@@ -64,60 +69,85 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="search-form__group search-form__group--half form-contact">
-              <legend class="search-form__title">Контактная информация:</legend>
+            <fieldset class="search-form__group search-form__group--half-right form-contact">
+              <h2 class="search-form__title">Контактная информация:</h2>
               <ul class="search-form__list search-form__list--half-right">
-                <li class="search-form__item">
+                <li class="search-form__item form-contact__item">
                   <label class="search-form__label person-info form-contact__info" for="search-form__phone">Контактный телефон*:</label>
                   <input class="search-form__text text" id="search-form__phone" type="text" placeholder="Введите телефон">
+                  <span class="form-contact__icon form-contact__icon--phone"></span>
                 </li>
-                <li class="search-form__item">
+                <li class="search-form__item form-contact__item">
                   <label class="search-form__label person-info form-contact__info" for="search-form__email">Электронная почта*:</label>
                   <input class="search-form__text text" id="search-form__email" type="text" placeholder="Введите e-mail">
+                  <span class="form-contact__icon form-contact__icon--mail"></span>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="search-form__group impression">
-              <legend class="search-form__title">Ваше общее впечатление:</legend>
-              <ul class="search-form__list">
-                <li class="search-form__item">
-                  <input class="search-form__radio" id="plus" name="emotion" value="plus" type="radio" checked>
-                  <label class="search-form__label text" for="plus">Скорее положительное</label>
+            <fieldset class="search-form__group control">
+              <h2 class="search-form__title control__title">Ваше общее впечатление:</h2>
+              <ul class="search-form__list control__list control__list--emotion">
+                <li class="search-form__item control__item">
+                  <label class="control__label">
+                    <input class="control__radio visually-hidden" id="plus" name="emotion" value="plus" type="radio" checked>
+                    <span class="control__icon control__icon--radio"></span>
+                    <span class="control__text text" for="plus">Скорее положительное</label>
+                  </label>
                 </li>
-                <li class="search-form__item">
-                  <input class="search-form__radio" id="minus" name="emotion" value="minus" type="radio">
-                  <label class="search-form__label text" for="minus">Скорее отрицательное</label>
+                <li class="search-form__item control__item">
+                  <label class="control__label">
+                    <input class="control__radio visually-hidden" id="minus" name="emotion" value="minus" type="radio">
+                    <span class="control__icon control__icon--radio"></span>
+                    <span class="control__text text" for="minus">Скорее отрицательное</label>
+                  </label>
                 </li>
-                <li class="search-form__item">
-                  <input class="search-form__radio" id="neutral" name="emotion" value="neutral" type="radio">
-                  <label class="search-form__label text" for="neutral">Затрудняюсь ответить</label>
+                <li class="search-form__item control__item">
+                  <label class="control__label">
+                    <input class="control__radio visually-hidden" id="minus" name="emotion" value="neutral" type="radio">
+                    <span class="control__icon control__icon--radio"></span>
+                    <span class="control__text text" for="neutral">Затрудняюсь ответить</label>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="search-form__group control">
+              <h2 class="search-form__title control__title">Посещенные достопримечательности:</h2>
+              <ul class="search-form__list control__list control__list--showplace">
+                <li class="search-form__item control__item">
+                  <label class="control__label">
+                    <input class="search-form__checkbox control__checkbox visually-hidden" id="bridge" name="showplace" value="bridge" type="checkbox" checked>
+                    <span class="search-form__checkbox-icon control__icon control__icon--checkbox"></span>
+                    <span class="control__text text" for="bridge">Мост Дьявола</label>
+                  </label>
+                </li>
+                <li class="search-form__item control__item">
+                  <label class="control__label">
+                    <input class="search-form__checkbox control__checkbox visually-hidden" id="mountain" name="showplace" value="mountain" type="checkbox" checked>
+                    <span class="search-form__checkbox-icon control__icon control__icon--checkbox"></span>
+                    <span class="control__text text" for="mountain">Гора-Колокол</label>
+                  </label>
+                </li>
+                <li class="search-form__item control__item">
+                  <label class="control__label">
+                    <input class="search-form__checkbox control__checkbox visually-hidden" id="park" name="showplace" value="park" type="checkbox" checked>
+                    <span class="search-form__checkbox-icon control__icon control__icon--checkbox"></span>
+                    <span class="control__text text" for="park">Слайд-парк</label>
+                  </label>
+                </li>
+                <li class="search-form__item control__item">
+                  <label class="control__label">
+                    <input class="search-form__checkbox control__checkbox visually-hidden" id="rock" name="showplace" value="rock" type="checkbox">
+                    <span class="search-form__checkbox-icon control__icon control__icon--checkbox"></span>
+                    <span class="control__text text" for="rock">Красные скалы</label>
+                  </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="search-form__group">
-              <legend class="search-form__title">Посещенные достопримечательности:</legend>
-              <ul class="search-form__list">
-                <li class="search-form__item">
-                  <input class="search-form__checkbox" id="bridge" name="showplace" value="bridge" type="checkbox" checked>
-                  <label class="search-form__label text" for="bridge">Мост Дьявола</label>
-                </li>
-                <li class="search-form__item">
-                  <input class="search-form__checkbox" id="mountain" name="showplace" value="mountain" type="checkbox" checked>
-                  <label class="search-form__label text" for="mountain">Гора-Колокол</label>
-                </li>
-                <li class="search-form__item">
-                  <input class="search-form__checkbox" id="park" name="showplace" value="park" type="checkbox" checked>
-                  <label class="search-form__label text" for="park">Слайд-парк</label>
-                </li>
-                <li class="search-form__item">
-                  <input class="search-form__checkbox" id="rock" name="showplace" value="rock" type="checkbox">
-                  <label class="search-form__label text" for="rock">Красные скалы</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="search-form__group">
-              <legend class="search-form__title">Опишите свои эмоции:</legend>
-              <textarea class="search-form__textarea text" placeholder="Опишите подробно все свои восторги" name=comment></textarea>
+              <h2 class="search-form__title">Опишите свои эмоции:</h2>
+              <div class="search-form__list search-form__list--textarea">
+                <textarea class="search-form__textarea text" placeholder="Опишите подробно все свои восторги" name=comment></textarea>
+              </div>
             </fieldset>
             <button class="search-form__button button" type="submit">Отправить отзыв</button>
             <p class="search-form__footnote">* — Обязательные поля</p>
@@ -130,16 +160,19 @@
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                  <svg class="social__icon social__icon--vk" width="24" height="14" viewBox="0 0 24 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.45.948c.166-.546 0-.948-.795-.948H20.03c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.191-.418-.738V.948c0-.656-.184-.948-.74-.948H9.151c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984-.89 0-3.055-3.211-4.34-6.885C4.45.288 4.198 0 3.527 0H.9C.15 0 0 .347 0 .73c0 .682.89 4.07 4.145 8.551C6.315 12.341 9.37 14 12.153 14c1.669 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667C19.11 13.216 19.403 14 20.405 14h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.491-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z"/></svg>
                   <span class="visually-hidden">Вконтакте</span>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                  <svg class="social__icon social__icon--telegram" width="22" height="18" viewBox="0 0 22 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.44 1.622-3.17 14.944c-.239 1.055-.862 1.317-1.748.82l-4.828-3.557-2.33 2.24c-.258.259-.473.474-.97.474l.347-4.917 8.948-8.086c.39-.347-.084-.54-.604-.192L6.022 10.314 1.26 8.823C.224 8.5.205 7.787 1.476 7.29L20.103.113c.863-.323 1.617.192 1.336 1.51Z"/></svg>
                   <span class="visually-hidden">Телеграмм</span>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <svg class="social__icon social__icon--youtube" width="20" height="14" viewBox="0 0 20 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.1813 0H2.8133C1.3062 0 0 1.3 0 2.8v8.3C0 12.7 1.3062 14 2.8133 14h14.368c1.6076 0 2.8133-1.3 2.8133-2.8V2.8C20.095 1.3 18.7889 0 17.1813 0ZM7.0333 10.4V3.6L13.8656 7l-6.8323 3.4Z"/></svg>
                   <span class="visually-hidden">Youtube</span>
                 </a>
               </li>
@@ -148,11 +181,29 @@
           <div class="main-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="copyright__text">Разработано:</span>
-              <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" width="24" height="29" fill="currentColor"><path fill="#81B3D2" d="M12.134 0h-.09L0 1.19v21.007L12.045 29 24 22.197V1.19L12.134 0Zm10.17 10.29-10.26-5.783v-.085h-.089l-.089-.085v.085L1.696 10.29V2.636l10.26-1.02 10.349 1.02v7.654ZM11.956 5.783l10.26 5.698-4.014 2.211-6.335-3.572v1.19l5.264 2.977-.803.426-4.46-2.552v1.19l3.39 1.957-.714.425-2.677-1.53v1.19l1.695.935-1.606.936-10.17-5.698 10.17-5.783Zm-10.26 7.059 10.171 5.783v.85l-7.048-3.997v1.19l7.137 4.083v.935L4.818 17.69v1.19l7.137 4.083 7.227-4.167v-4.423l3.034-1.7v8.504l-10.26 5.868-10.26-5.783v-8.42Z"/></svg>
+              <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="27" viewBox="0 0 24 29"><path d="M12.13 0h-.09L0 1.2v21L12.04 29 24 22.2v-21L12.13 0ZM22.3 10.29 12.04 4.51v-.09h-.08l-.1-.08v.08L1.7 10.3V2.64l10.26-1.02L22.3 2.64v7.65Zm-10.34-4.5 10.26 5.7-4.02 2.2-6.33-3.57v1.2l5.26 2.97-.8.42-4.46-2.55v1.2l3.39 1.95-.72.42-2.67-1.53v1.2l1.7.93-1.61.93-10.18-5.7 10.18-5.78ZM1.7 12.83l10.17 5.78v.86l-7.05-4v1.19l7.14 4.08v.94l-7.14-4v1.19l7.14 4.08 7.22-4.17v-4.42l3.04-1.7v8.5l-10.26 5.87L1.7 21.26v-8.42Z"/></svg>
             </a>
           </div>
         </div>
       </footer>
     </div>
+
+    <div class="modal modal--error">
+      <div class="modal__container modal__container--error">
+        <h2 class="modal__title">Что-то пошло не так!</h2>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button modal__button--error button">Ок</button>
+      </div>
+    </div>
+    <div class="modal modal--success">
+      <div class="modal__container modal__container--sucess">
+        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам,<br>В ближайшее время мы опубликуем
+          его на сайте.</p>
+        <button class="modal__button modal__button--sucess button">Закрыть окно</button>
+      </div>
+    </div>
+
+    <script src="../js/script.js"></script>
   </body>
 </html>

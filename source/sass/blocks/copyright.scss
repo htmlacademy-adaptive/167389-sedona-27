@@ -2,11 +2,14 @@
   text-transform: uppercase;
   font-weight: 400;
   padding: 0;
-  padding-left: 39px;
 }
 
 .copyright__link {
   color: #000000;
+  text-decoration: none;
+  position: relative;
+  padding: 15px 0;
+  display: block;
 }
 
 .copyright__link:focus {
@@ -17,6 +20,41 @@
   color: #81b3d2;
 }
 
-.copyrighgt__link:active {
+.copyright__link:active {
   color: #b3b3b3;
+}
+
+.copyright__text {
+  padding-right: 35px;
+}
+
+.copyright__logo {
+  position: absolute;
+  bottom: 12px;
+  right: 30%;
+}
+
+
+@media (min-width: 768px) {
+  .copyright__link-index {
+    margin-right: 15px;
+  }
+
+  .copyright__text {
+    margin-right: 1px;
+  }
+
+  .copyright__logo {
+    right: 1px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .copyright__text {
+    margin-right: 1px;
+  }
+
+  .copyright__logo {
+    right: 1px;
+  }
 }

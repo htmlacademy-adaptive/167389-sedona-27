@@ -1,0 +1,126 @@
+.control__list {
+  padding-bottom: 9px;
+}
+
+.control__label {
+  position: relative;
+  display: block;
+}
+
+.control__icon {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background: #f2f2f2;
+  border: none;
+  top: 0;
+  left: 0;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+}
+
+.control__icon--checkbox {
+  border-radius: 4px;
+}
+
+.control__checkbox[type="checkbox"]:checked + .control__icon--checkbox {
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:disabled {
+    background-color: #e5e5e5;
+    background-blend-mode: overlay;
+    outline: none;
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-blend-mode: overlay;
+    outline: none;
+  }
+}
+
+.control__icon--radio {
+  border-radius: 50%;
+}
+
+.control__radio[type="radio"]:checked + .control__icon--radio::before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 8px);
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
+  content: "";
+
+  &:disabled {
+    background-color: #e5e5e5;
+    background-blend-mode: overlay;
+    outline: none;
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-blend-mode: overlay;
+    outline: none;
+  }
+}
+
+.control__text {
+  display: block;
+  padding: 10px 10px 10px 62px;
+}
+
+@media (min-width: 768px) {
+  .control__title {
+    width: 402px;
+  }
+
+  .control__list--emotion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0 36px;
+  }
+
+  .control__list--showplace {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    row-gap: 16px;
+    padding: 0 84px;
+  }
+
+  .control__item {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .control__list--emotion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    padding: 0 53px;
+  }
+
+  .control__list--showplace {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 32px;
+    row-gap: 64px;
+    padding: 0 44px;
+  }
+}

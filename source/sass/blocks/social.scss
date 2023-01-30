@@ -8,17 +8,56 @@
 
 .social__item {
   background-color: #81b2d3;
-  display: block;
+  display: flex;
   width: 48px;
   height: 48px;
+  justify-content: center;
+  align-items: center;
 }
 
 .social__item:not(:last-child) {
   margin-right: 6px;
 }
 
+.social__link {
+  display: block;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+}
+
+.social__icon {
+  display: block;
+  color: #ffffff;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: 768px) {
+  .social {
+    margin: 0 auto;
+  }
+
   .social__list {
-    margin: 36px auto;
+    margin: 32px auto;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social__list-other {
+    padding-left: 0;
+  }
+
+  .social__list {
+    padding-right: 4px;
   }
 }
